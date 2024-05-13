@@ -113,7 +113,7 @@ public abstract class Usuario
 			List<String> autores = ventas.get(i).getPieza().getAutores();
 			for(int j = 0; j < autores.size(); i++)
 			{
-				if (autores.get(j).compareToIgnoreCase(nombre) == 0)
+				if (autores.get(j) == nombre)
 				{
 					String fecha = ventas.get(i).getFecha().toString();
 					Double precio = ventas.get(i).getPrecioFinal();

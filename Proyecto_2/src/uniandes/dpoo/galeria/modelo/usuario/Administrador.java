@@ -22,7 +22,7 @@ public class Administrador extends Usuario
 		return "ADMINISTRADOR";
 	}
 	
-	public List<HashMap<String,Pieza>> gethistoriaCompradorPiezas(Cliente cliente)
+	public List<HashMap<String,Pieza>> gethistoriaCompradorPiezas(Cliente cliente, UserManager userManager)
 	{
 		ArrayList<Pieza> piezasCompradas = (ArrayList<Pieza>) cliente.getPiezasCompradas();
 		ArrayList<Venta> ventas = (ArrayList<Venta>) userManager.getVentas();
