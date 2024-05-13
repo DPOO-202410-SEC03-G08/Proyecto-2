@@ -6,10 +6,8 @@ package uniandes.dpoo.galeria.exeptions;
 @SuppressWarnings("serial")
 public class InformacionInconsistenteException extends Exception
 {
-
     public InformacionInconsistenteException( String mensaje )
     {
         super( mensaje );
     }
-
 }
