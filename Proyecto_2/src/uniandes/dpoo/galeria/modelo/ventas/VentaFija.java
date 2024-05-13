@@ -1,7 +1,7 @@
 package uniandes.dpoo.galeria.modelo.ventas;
 
-import java.sql.Date;
 
+import java.util.Date;
 import uniandes.dpoo.galeria.modelo.pieza.Pieza;
 import uniandes.dpoo.galeria.modelo.usuario.Administrador;
 import uniandes.dpoo.galeria.modelo.usuario.Cajero;
