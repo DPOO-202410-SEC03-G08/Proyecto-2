@@ -7,6 +7,7 @@ import java.util.Scanner;
 import uniandes.dpoo.galeria.modelo.Inventario;
 import uniandes.dpoo.galeria.modelo.pieza.Pieza;
 import uniandes.dpoo.galeria.modelo.usuario.Cliente;
+import uniandes.dpoo.galeria.modelo.ventas.Subasta;
 import uniandes.dpoo.galeria.modelo.ventas.Venta;
 import uniandes.dpoo.galeria.modelo.ventas.VentaFija;
 
@@ -58,12 +59,15 @@ public class Main {
                     	Pieza pieza = inventario.getPieza(opcion3);
                     	System.out.println("Ingrese la modalidad de compra (fija/subasta).");
                     	String opcion4 = scanner.next();
+                    	Date fecha = new Date();
+                		fecha.getDate();
                     	switch (opcion4) {
                     	case "fija":
-                    		Date fecha = new Date();
-                    		fecha.getDate();
                     		VentaFija venta = new VentaFija(pieza, fecha, (double) pieza.getPrecio(), cliente, null);
+                    		venta.venderPieza();
+                    		System.out.println("Proceso Realizado.");
                     	case "subasta":
+                    		Subasta subasta = new Subasta(pieza, fecha, (double) pieza.getPrecio(), cliente, null, false, null);
                     	}
                     	break;
                     case 2:
