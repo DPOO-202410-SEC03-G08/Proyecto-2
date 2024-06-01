@@ -11,7 +11,6 @@ import uniandes.dpoo.galeria.modelo.ventas.Subasta;
 import uniandes.dpoo.galeria.modelo.ventas.Venta;
 import uniandes.dpoo.galeria.modelo.ventas.VentaFija;
 
-
 public class Main {
 	
 	private static Inventario inventario;
